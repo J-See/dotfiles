@@ -1,4 +1,4 @@
-## code snap 
+## Must Install
 ```
 sudo pacman -S silicon luarocks
 ```
