@@ -118,6 +118,17 @@ fi
 
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 
+## Functions
+# toggle kitty theme transparency
+toggle_kitty_transparency() {
+    local dir="~/dotfiles/.config/kitty"
+    if [[ -d "$dir" ]]; then
+		sh ~/dotfiles/.config/kitty/toggle-opacity.sh
+    else
+		sh ~/.config/kitty/toggle-opacity.sh
+    fi
+}
+
 # # Aliases
 # alias ls='ls --color'
 # alias vim='nvim'
